@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="keywords" content="jquery" />
+		<meta name="description" content="oop..." />
+		<title>missalive</title>
+
+		<style type="text/css">
+			body {
+				margin: 0px;
+			}
+			#slider {
+				width: 100%;
+				margin: 0px;
+			}
+			#slider img {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				display: none;
+			}
+
+			/* The Nivo Slider styles */
+			.nivoSlider {
+				position: relative;
+				width: 100%;
+				overflow: hidden;
+			}
+			.nivoSlider img {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				max-width: none;
+				width: 100%;
+			}
+			.nivo-main-image {
+				display: block !important;
+				position: relative !important;
+				width: 100% !important;
+			}
+
+			/* If an image is wrapped in a link */
+			.nivoSlider a.nivo-imageLink {
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				width: 100%;
+				height: auto;
+				border: 0;
+				padding: 0;
+				margin: 0;
+				z-index: 6;
+				display: none;
+				background: white;
+				filter: alpha(opacity=0);
+				opacity: 0;
+			}
+			/* The slices and boxes in the Slider */
+			.nivo-slice {
+				display: block;
+				position: absolute;
+				z-index: 5;
+				height: 100%;
+				top: 0;
+			}
+			.nivo-box {
+				display: block;
+				position: absolute;
+				z-index: 5;
+				overflow: hidden;
+			}
+			.nivo-box img {
+				display: block;
+			}
+
+			/* Caption styles */
+			.nivo-caption {
+				position: absolute;
+				left: 0px;
+				bottom: 0px;
+				background: #000;
+				color: #fff;
+				width: 100%;
+				z-index: 8;
+				padding: 5px 10px;
+				opacity: 0.8;
+				overflow: hidden;
+				display: none;
+				-moz-opacity: 0.8;
+				filter: alpha(opacity=8);
+				-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+				-moz-box-sizing: border-box; /* Firefox, other Gecko */
+				box-sizing: border-box; /* Opera/IE 8+ */
+			}
+			.nivo-caption p {
+				padding: 5px;
+				margin: 0;
+			}
+			.nivo-caption a {
+				display: inline !important;
+			}
+			.nivo-html-caption {
+				display: none;
+			}
+			/* Direction nav styles (e.g. Next & Prev) */
+			.nivo-directionNav a {
+				position: absolute;
+				top: 45%;
+				z-index: 9;
+				cursor: pointer;
+			}
+			.nivo-prevNav {
+				left: 0px;
+			}
+			.nivo-nextNav {
+				right: 0px;
+			}
+			/* Control nav styles (e.g. 1,2,3...) */
+			.nivo-controlNav {
+				text-align: center;
+				padding: 15px 0;
+			}
+			.nivo-controlNav a {
+				cursor: pointer;
+			}
+			.nivo-controlNav a.active {
+				font-weight: bold;
+			}
+		</style>
+		<script type="text/javascript" src="jquery-1.9.0.js"></script>
+		<script type="text/javascript" src="jquery.nivo.slider.pack.js"></script>
+
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<div class="slider-wrapper theme-default">
+				<div id="slider" class="nivoSlider">
+					<img src="images/s5.jpg"   />
+					<img src="images/s2.jpg"   />
+					<img src="images/s3.jpg"   />
+					<img src="images/s4.jpg"   />
+					<img src="images/s1.jpg"   />
+					<img src="images/s6.jpg"   />
+					<img src="images/s7.jpg"   />
+					<img src="images/s8.jpg"   />
+					<img src="images/s9.jpg"   />
+					<img src="images/s10.jpg"   />
+					<img src="images/s11.jpg"   />
+					<img src="images/s12.jpg"   />
+					<img src="images/s13.jpg"   />
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="scripts/jquery-1.9.0.min.js"></script>
+		<script type="text/javascript" src="../jquery.nivo.slider.js"></script>
+		<script type="text/javascript">
+			$(window).load(function() {
+				$('#slider').nivoSlider({
+					directionNav : false,
+					directionNavHide : false,
+					controlNav : false,
+					pauseOnHover : false
+				});
+			});
+		</script>
+	</body>
+</html>
