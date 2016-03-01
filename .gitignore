@@ -1,1 +1,4 @@
-targettarget
+target
+.settings
+.classpath
+.project
